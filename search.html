@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+function clear_fld(field){
+	if(field.value==field.defaultValue)
+		field.value = "";
+	else if (field.value=="")
+		field.value=field.defaultValue;
+}
+</script>
+<style type="text/css">
+*{
+	padding:0;
+	margin:0;	
+}
+</style>
+</head>
+<body>
+<div class="lft">
+<div class="srch">
+<form action="#" method="get">
+		<input id="btn" type="button" name="btn"  value=""  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
+	<input id="srch" type="text" name="button"  value="جستجو" size="20"  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
+</form>
+</div>
+</div>
+</body>
+</html>

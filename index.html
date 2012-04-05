@@ -4,7 +4,45 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 <link type="text/css" rel="stylesheet" href="style.css"  />
+<script type="text/javascript">
+function clear_fld(field){
+	if(field.value==field.defaultValue)
+		field.value = "";
+	else if (field.value=="")
+		field.value=field.defaultValue;
+}
+</script>
 <style type="text/css">
+div.lft div.srch{
+	width:225px;
+	min-height:inherit;
+	padding-top:1px;
+}
+div.srch form{
+	border:1px solid #eee;
+	-webkit-box-shadow:0 0 10px black;
+	width:180px;
+	border-radius:10px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	height:25px;	
+	margin:5px auto 0;
+}
+div.srch #srch{
+	border:none;
+	border-radius:10px;
+	direction:rtl;
+	height:25px;
+	float:right;
+}
+div.srch #btn{
+	background:url(images/searchicon.png) center no-repeat;
+	border:none;
+	width:20px;
+	cursor:pointer;
+	margin-top:3px;
+}
 </style>
 </head>
 <body>
@@ -26,14 +64,80 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="container-menu">
-		<div class="menu">
+		<div class="menu" style="background:url(images/bg-menu.png);">
 			<div class="lft">
-				<div class="srch"></div>
+				<div class="srch">
+					<form action="#" method="get">
+						<input id="btn" type="button" name="btn"  value=""  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
+						<input id="srch" type="text" name="button"  value="جستجو" size="20"  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
+					</form>
+				</div>
 			</div>
 			<div class="rgt">
-				<div class="mnu"></div>
+				<div class="mnu">
+					<ul>
+						<li><a href="#">امکانات</a>
+							<ul>
+								<li><a href="#">غذا خوری</a></li>
+								<li><a href="#">بوفه</a></li>
+								<li><a href="#">خوابگاه</a></li>
+								<li><a href="#">اینترنت</a></li>
+								<li><a href="#">تربیت بدنی</a></li>
+								<li><a href="#">کتابخانه</a></li>
+							</ul>
+						</li>
+						<li><a href="#">پژوهش</a>
+							<ul>
+								<li><a href="#">معاون پژوهشی</a></li>
+								<li><a href="#">مرکز تحقیقات سجاد</a></li>
+								<li><a href="#">مرکز انفورماتیک</a></li>
+								<li><a href="#">انتشارات</a></li>
+								<li><a href="#">کنفرانس ها</a></li>
+								<li><a href="#">آزمایشگاهها</a></li>
+								<li><a href="#">کارآموزی</a></li>
+								<li><a href="#">کتابخانه</a></li>
+								<li><a href="#">کارگاهها</a></li>
+							</ul>	
+						</li>
+						<li><a href="#">آموزشی</a>
+							<ul>
+								<li><a href="#">معاون آموزشی</a></li>
+								<li><a href="#">اداره آموزش</a></li>
+								<li><a href="#">قوانین</a></li>
+								<li><a href="#">تقویم آموزشی</a></li>
+								<li><a href="#">گروهها</a></li>
+							</ul>
+						</li>
+						<li><a href="#">اساتید</a>
+							<ul>
+								<li><a href="#">مهندسی کامپیوتر</a></li>
+								<li><a href="#">مهندسی صنایع</a></li>
+								<li><a href="#">مهندسی عمران</a></li>
+								<li><a href="#">مهندسی برق</a></li>
+							</ul>
+						</li>
+						<li><a href="#">خدمات</a>
+							<ul>
+								<li><a href="#">پست الکترونیک</a></li>
+								<li><a href="#">تغذیه</a></li>
+								<li><a href="#">پورتال اساتید</a></li>
+								<li><a href="#">پورتال دانشجویان</a></li>
+								<li><a href="#">فارغ التحصیلان</a></li>
+								<li><a href="#">حساب کاربران اینترنت</a></li>
+								<li><a href="#">مرکز دانلود</a></li>
+								<li><a href="#">راهنما</a></li>
+							</ul>
+						</li>
+						<li  style="direction:rtl"><a href="#">صفحه اصلی</a>
+							<ul>
+								<li><a href="#">پورتال دانشجویی</a></li>
+								<li><a href="#">پورتال اساتید</a></li>
+								<li><a href="#">نگارش فنی</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
