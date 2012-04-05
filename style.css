@@ -192,6 +192,36 @@
 		min-width:225px;
 		min-height:40px;
 	}
+	div.lft div.srch{
+		width:225px;
+		min-height:inherit;
+		padding-top:1px;
+	}
+	div.srch form{
+		border:1px solid #eee;
+		-webkit-box-shadow:0 0 10px black;
+		width:180px;
+		border-radius:10px;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:15px;
+		font-weight:bold;
+		height:25px;	
+		margin:5px auto 0;
+	}
+	div.srch #srch{
+		border:none;
+		border-radius:10px;
+		direction:rtl;
+		height:25px;
+		float:right;
+	}
+	div.srch #btn{
+		background:url(images/searchicon.png) center no-repeat;
+		border:none;
+		width:20px;
+		cursor:pointer;
+		margin-top:3px;
+	}
 /* Main */
 	div.rgt div.boss{
 	width:200px;
