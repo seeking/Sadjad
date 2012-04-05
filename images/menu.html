@@ -9,25 +9,27 @@
 	margin:0;
 }
 div.mnu{
-	min-width:535px;
+	width:595px;/*width:535px;*/
 	height:40px;
+	outline:1px solid red;
+	overflow:visible;
 }
 div.mnu ul{
 	list-style-type:none;
-	background-color:black;
 }
 div.mnu li{
 	float:left;
 	cursor:auto;
 	background-image:url(MenuSplitter_2.png), url(bg-menu.png);
-	background-position:left;
 	background-repeat:no-repeat, repeat-x;
+}
+div.mnu li ul{
+	outline:1px solid red;
 }
 div.mnu li li{
 	float:none;
-	background-image:none;
 }
-div.mnu li:hover a{
+div.mnu li:hover > a{
 	text-shadow:1px 1px 5px green;
 }
 div.mnu a{
@@ -49,7 +51,14 @@ div.mnu a{
 	<li><a href="#">آموزشی</a></li>
 	<li><a href="#">اساتید</a></li>
 	<li><a href="#">خدمات</a></li>
-	<li><a href="#" style="padding-left:10px;padding-right:10px;">صفحه اصلی</a></li>
+	<li><a href="#" style="padding-left:10px;padding-right:10px;">صفحه اصلی</a>
+<ul>
+	<li><a href="#">پورتال دانشجویی</a></li>
+	<li><a href="#">پورتال اساتید</a></li>
+	<li><a href="#">نگارش فنی</a></li>
+</ul>
+
+	</li>
 </ul>
 </div>
 </body>
