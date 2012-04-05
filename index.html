@@ -5,14 +5,47 @@
 <title>Untitled Document</title>
 <link type="text/css" rel="stylesheet" href="style.css"  />
 <style type="text/css">
+div.lang ul {
+	list-style-type:none;
+}
+div.lang li {
+	display:block;
+	float:left;
+	width:60px;
+	text-align:center;
+}
+div.lang a {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:white;
+}
+div.lang ul li:nth-child(2){/* div.lang ul li:last-child */
+	border-left:1px solid red;	
+}
+div.date p{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:8pt;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+}
 </style>
 </head>
 <body>
 	<div class="container-header">
 		<div class="header">
 			<div class="lft">
-				<div class="lang"></div>
-				<div class="date"></div>
+				<div class="lang">
+					<ul>
+						<li><a href="#">فارسی</a></li>
+						<li><a href="#">انگلیسی</a></li>
+					</ul>
+				</div>
+				<div class="date">
+					<p>امروز : پنجشنبه 17 فروردین 1391</p>
+				</div>
 			</div>
 			<div class="rgt" style="padding-top:1px">
 				<div class="logo"></div>

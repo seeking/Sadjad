@@ -44,7 +44,7 @@ div.container-header{
 div[class ^= container] > div{
 		width:980px;
 		min-height:inherit;
-		background-color:#062D28;
+		background-color:#445060;
 		opacity:0.5;
 		margin:0 auto;
 	}
@@ -91,7 +91,7 @@ div.header div.lft{
 	}
 	div.fmenu div.logo{
 		width:inherit;
-		height:32px;	
+		height:32px;
 	}
 	div.fmenu div.sfmenu{/*sub footer menu*/
 		width:840px;
@@ -105,7 +105,6 @@ div.header div.lft{
 /* Sub Sub Sub ... Container 
 {
 */
-
 /* Header */
 div.lft div.lang{
 	width:130px;
@@ -121,6 +120,33 @@ div.rgt div.logo {
 	margin-top:50px;
 	width:330px;
 	height:100px;
+	background:url(images/Logo.png) center top no-repeat;
+}
+div.lang ul {
+	list-style-type:none;
+}
+div.lang li {
+	display:block;
+	float:left;
+	width:60px;
+	text-align:center;
+}
+div.lang a {
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:white;
+}
+div.lang ul li:nth-child(2){/* div.lang ul li:last-child */
+	border-left:1px solid red;	
+}
+div.date p{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:8pt;
+	text-align:center;
+	font-weight:bold;
+	color:white;
 }
 /* Menu */
 div.rgt div.mnu{
