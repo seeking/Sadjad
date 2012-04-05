@@ -4,40 +4,71 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 <style type="text/css">
+*{
+	padding:0;
+	margin:0;
+}
+div.mnu{
+	min-width:535px;
+	height:40px;
+}
 div.mnu ul{
 	list-style-type:none;
-	outline:1px solid red;
+	background-color:black;
 }
 div.mnu li{
-	outline:1px solid red;
-	display:block;
 	float:left;
-	width:89px;
-	text-align:center;
-	height:30px;
-	padding-top:10px;
 	cursor:auto;
+	background-image:url(MenuSplitter_2.png), url(bg-menu.png);
+	background-position:left;
+	background-repeat:no-repeat, repeat-x;
+}
+div.mnu li li{
+	float:none;
+	background-image:none;
 }
 div.mnu li:hover a{
-	background-color:red;	
+	text-shadow:1px 1px 5px green;
 }
 div.mnu a{
-	outline:1px solid red;
+	display:block;
 	text-decoration:none;
-	padding:10px 22px;
+	padding:10px 26px;
+	color:dimGray;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family:Tahoma, Geneva, sans-serifl
 }
 </style>
 </head>
 <body>
 <div class="mnu">
-	<ul>
-		<li><a href="#">امکانات</a></li>
-		<li><a href="#">پژوهش</a></li>
-		<li><a href="#">آموزشی</a></li>
-		<li><a href="#">اساتید</a></li>
-		<li><a href="#">خدمات</a></li>
-		<li><a href="#" style="padding:10px 10px">صفحه اصلی</a></li>
-	</ul>
+<ul>
+	<li><a href="#">امکانات</a></li>
+	<li><a href="#">پژوهش</a></li>
+	<li><a href="#">آموزشی</a></li>
+	<li><a href="#">اساتید</a></li>
+	<li><a href="#">خدمات</a></li>
+	<li><a href="#" style="padding-left:10px;padding-right:10px;">صفحه اصلی</a></li>
+</ul>
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
