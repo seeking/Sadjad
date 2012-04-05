@@ -1,0 +1,170 @@
+/* Public */
+*{
+		padding:0;
+		margin:0;	
+	}
+	body{
+		/*background:url(images/bg.jpg) no-repeat top center;*/
+		height:1993px;
+	}
+	div{
+		outline:1px solid red;	
+	}
+	div.lft {
+	float:left;	
+	}
+	div.rgt{
+		float:right;
+	}
+	div.cnr{
+		margin:0 auto;	
+	}
+/* Container */
+div.container-header{
+		min-height:150px;
+	}
+	div.container-menu{
+		min-height:70px;
+	}
+	div.container-banner{
+		min-height:310px;
+		margin-top:15px;
+	}
+	div.container-main{
+		min-height:1090px;
+	}
+	div.container-fmenu{
+		min-height:260px;
+		margin-top:15px;
+	}
+	div.container-footer{
+		min-height:35px;
+	}
+/* Sub Container */
+div[class ^= container] > div{
+		width:980px;
+		min-height:inherit;
+		background-color:#062D28;
+		opacity:0.5;
+		margin:0 auto;
+	}
+/* Sub Sub Container */
+div.header div.lft{
+		width:205px;
+		min-height:inherit;
+	}
+	div.header div.rgt{
+		width:335px;
+		min-height:inherit;
+		float:none;
+		margin-left:auto;
+	}
+	div.menu div.lft{
+		width:225px;
+		min-height:inherit;
+	}
+	div.menu div.rgt{
+		width:535px;
+		min-height:inherit;
+		float:none;
+		margin-left:auto;
+	}
+	div.banner div.lft{
+		width:715px;
+		min-height:inherit;
+	}
+	div.banner div.rgt{
+		width:265px;
+		min-height:inherit;
+		float:none;
+		margin-left:auto;
+	}
+	div.main div.lft{
+		width:710px;
+		min-height:inherit;	
+	}
+	div.main div.rgt{
+		width:260px;
+		min-height:inherit;
+		float:none;
+		margin-left:auto;
+	}
+	div.fmenu div.logo{
+		width:inherit;
+		height:32px;	
+	}
+	div.fmenu div.sfmenu{/*sub footer menu*/
+		width:840px;
+		min-height:255px;
+		margin:5px auto;
+	}
+	div.footer div.rgt{
+		width:400px;
+		min-height:inherit;	
+	}
+/* Sub Sub Sub ... Container 
+{
+*/
+
+/* Header */
+div.lft div.lang{
+	width:130px;
+	height:15px;
+	margin:40px auto 0;
+}
+div.lft div.date{
+	height:20px;
+	min-width:190px;
+	margin-top:75px;
+}
+div.rgt div.logo {
+	margin-top:50px;
+	width:330px;
+	height:100px;
+}
+/* Menu */
+div.rgt div.mnu{
+	min-width:520px;
+	min-height:40px;
+}
+div.lft div.srch{
+	min-width:225px;
+	min-height:40px;
+}
+/* Main */
+div.rgt div.boss{
+	width:200px;
+	min-height:420px;
+	margin:70px auto 0;
+}
+div.rgt div.boss div.pic{
+	width:140px;
+	height:95px;
+	margin:0 auto;
+}
+div.rgt div.boss div.txt{
+	width:inherit;
+	min-height:270px;
+	margin:45px auto 0;
+}
+div.lft div.abut {
+	min-height:135px;
+	width:inherit;
+	margin-top:70px;	
+}
+/* fmenu */
+div.sfmenu div.lft{
+	width:280px;
+	min-height:inherit;	
+}
+div.sfmenu div.rgt{
+	width:280px;
+	min-height:inherit;
+}
+div.sfmenu div.cnr{
+	width:280px;
+	min-height:inherit;
+}
+/*
+}
+*/
