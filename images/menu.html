@@ -7,35 +7,46 @@
 *{
 	padding:0;
 	margin:0;
+	direction:rtl;
 }
 div.mnu{
-	width:595px;/*width:535px;*/
+	width:535px;/*width:535px;*/
 	height:40px;
-	outline:1px solid red;
 	overflow:visible;
+	outline:1px solid red;
 }
 div.mnu ul{
 	list-style-type:none;
 }
-div.mnu li{
+div.mnu  ul > li{
 	float:left;
 	cursor:auto;
 	background-image:url(MenuSplitter_2.png), url(bg-menu.png);
 	background-repeat:no-repeat, repeat-x;
+	position:relative;
 }
 div.mnu li ul{
 	outline:1px solid red;
+	display:none;
+	position:absolute;
 }
 div.mnu li li{
+	background:url(bg-menu.png) repeat-x;
 	float:none;
 }
-div.mnu li:hover > a{
+div.mnu li ul a{
+	white-space:nowrap;	
+}
+div.mnu li:hover  > a{
 	text-shadow:1px 1px 5px green;
+}
+div.mnu li:hover ul {
+	display:block;
 }
 div.mnu a{
 	display:block;
 	text-decoration:none;
-	padding:10px 26px;
+	padding:13px 24px;
 	color:dimGray;
 	text-decoration: none;
 	font-size: 9pt;
@@ -46,38 +57,66 @@ div.mnu a{
 <body>
 <div class="mnu">
 <ul>
-	<li><a href="#">امکانات</a></li>
-	<li><a href="#">پژوهش</a></li>
-	<li><a href="#">آموزشی</a></li>
-	<li><a href="#">اساتید</a></li>
-	<li><a href="#">خدمات</a></li>
-	<li><a href="#" style="padding-left:10px;padding-right:10px;">صفحه اصلی</a>
-<ul>
-	<li><a href="#">پورتال دانشجویی</a></li>
-	<li><a href="#">پورتال اساتید</a></li>
-	<li><a href="#">نگارش فنی</a></li>
-</ul>
-
+	<li style="direction:ltr"><a href="#">امکانات</a>
+		<ul>
+			<li><a href="#">غذا خوری</a></li>
+			<li><a href="#">بوفه</a></li>
+			<li><a href="#">خوابگاه</a></li>
+			<li><a href="#">اینترنت</a></li>
+			<li><a href="#">تربیت بدنی</a></li>
+			<li><a href="#">کتابخانه</a></li>
+		</ul>
+	</li>
+	<li><a href="#">پژوهش</a>
+		<ul>
+			<li><a href="#">معاون پژوهشی</a></li>
+			<li><a href="#">مرکز تحقیقات سجاد</a></li>
+			<li><a href="#">مرکز انفورماتیک</a></li>
+			<li><a href="#">انتشارات</a></li>
+			<li><a href="#">کنفرانس ها</a></li>
+			<li><a href="#">آزمایشگاهها</a></li>
+			<li><a href="#">کارآموزی</a></li>
+			<li><a href="#">کتابخانه</a></li>
+			<li><a href="#">کارگاهها</a></li>
+		</ul>	
+	</li>
+	<li><a href="#">آموزشی</a>
+		<ul>
+			<li><a href="#">معاون آموزشی</a></li>
+			<li><a href="#">اداره آموزش</a></li>
+			<li><a href="#">قوانین</a></li>
+			<li><a href="#">تقویم آموزشی</a></li>
+			<li><a href="#">گروهها</a></li>
+		</ul>
+	</li>
+	<li><a href="#">اساتید</a>
+		<ul>
+			<li><a href="#">مهندسی کامپیوتر</a></li>
+			<li><a href="#">مهندسی صنایع</a></li>
+			<li><a href="#">مهندسی عمران</a></li>
+			<li><a href="#">مهندسی برق</a></li>
+		</ul>
+	</li>
+	<li><a href="#">خدمات</a>
+		<ul>
+			<li><a href="#">پست الکترونیک</a></li>
+			<li><a href="#">تغذیه</a></li>
+			<li><a href="#">پورتال اساتید</a></li>
+			<li><a href="#">پورتال دانشجویان</a></li>
+			<li><a href="#">فارغ التحصیلان</a></li>
+			<li><a href="#">حساب کاربران اینترنت</a></li>
+			<li><a href="#">مرکز دانلود</a></li>
+			<li><a href="#">راهنما</a></li>
+		</ul>
+	</li>
+	<li><a href="#">صفحه اصلی</a>
+		<ul>
+			<li><a href="#">پورتال دانشجویی</a></li>
+			<li><a href="#">پورتال اساتید</a></li>
+			<li><a href="#">نگارش فنی</a></li>
+		</ul>
 	</li>
 </ul>
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
