@@ -6,114 +6,202 @@
 <link type="text/css" rel="stylesheet" href="style.css"  />
 <script type="text/javascript" src="script.js"></script>
 <style type="text/css">
+body {
+	direction:rtl;	
+}
+div.banner marquee{
+	height:310px;
+	width:inherit;
+}
+
+div.banner div.news{
+	width:250px;
+	margin:0 auto;
+}
+div.banner div.news h4{
+	margin-top:50px;
+	text-shadow:1px 1px 10px black;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:10px;
+}
+div.banner div.news p{
+	font-size:14px;
+	text-shadow:1px 1px 10px green;
+}
+
 </style>
 </head>
 <body>
-	<div class="container-header">
-		<div class="header">
-			<div class="lft">
-				<div class="lang">
-					<ul>
-						<li><a href="#">فارسی</a></li>
-						<li><a href="#">انگلیسی</a></li>
-					</ul>
-				</div>
-				<div class="date">
-					<p>امروز : پنجشنبه 17 فروردین 1391</p>
-				</div>
+<div class="container-header">
+	<div class="header">
+		<div class="lft">
+			<div class="lang">
+				<ul>
+					<li><a href="#">فارسی</a></li>
+					<li><a href="#">انگلیسی</a></li>
+				</ul>
 			</div>
-			<div class="rgt" style="padding-top:1px">
-				<div class="logo"></div>
+			<div class="date">
+				<p>امروز : پنجشنبه 17 فروردین 1391</p>
+			</div>
+		</div>
+		<div class="rgt" style="padding-top:1px">
+			<div class="logo"></div>
+		</div>
+	</div>
+</div>
+<div class="container-menu">
+	<div class="menu" style="background:url(images/bg-menu.png);">
+		<div class="lft">
+			<div class="srch">
+				<form action="#" method="get">
+					<input id="btn" type="button" name="btn"  value=""  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
+					<input id="srch" type="text" name="button"  value="جستجو" size="20"  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
+				</form>
+			</div>
+		</div>
+		<div class="rgt">
+			<div class="mnu">
+				<ul>
+					<li><a href="#">امکانات</a>
+						<ul>
+							<li><a href="#">غذا خوری</a></li>
+							<li><a href="#">بوفه</a></li>
+							<li><a href="#">خوابگاه</a></li>
+							<li><a href="#">اینترنت</a></li>
+							<li><a href="#">تربیت بدنی</a></li>
+							<li><a href="#">کتابخانه</a></li>
+						</ul>
+					</li>
+					<li><a href="#">پژوهش</a>
+						<ul>
+							<li><a href="#">معاون پژوهشی</a></li>
+							<li><a href="#">مرکز تحقیقات سجاد</a></li>
+							<li><a href="#">مرکز انفورماتیک</a></li>
+							<li><a href="#">انتشارات</a></li>
+							<li><a href="#">کنفرانس ها</a></li>
+							<li><a href="#">آزمایشگاهها</a></li>
+							<li><a href="#">کارآموزی</a></li>
+							<li><a href="#">کتابخانه</a></li>
+							<li><a href="#">کارگاهها</a></li>
+						</ul>
+					</li>
+					<li><a href="#">آموزشی</a>
+						<ul>
+							<li><a href="#">معاون آموزشی</a></li>
+							<li><a href="#">اداره آموزش</a></li>
+							<li><a href="#">قوانین</a></li>
+							<li><a href="#">تقویم آموزشی</a></li>
+							<li><a href="#">گروهها</a></li>
+						</ul>
+					</li>
+					<li><a href="#">اساتید</a>
+						<ul>
+							<li><a href="#">مهندسی کامپیوتر</a></li>
+							<li><a href="#">مهندسی صنایع</a></li>
+							<li><a href="#">مهندسی عمران</a></li>
+							<li><a href="#">مهندسی برق</a></li>
+						</ul>
+					</li>
+					<li><a href="#">خدمات</a>
+						<ul>
+							<li><a href="#">پست الکترونیک</a></li>
+							<li><a href="#">تغذیه</a></li>
+							<li><a href="#">پورتال اساتید</a></li>
+							<li><a href="#">پورتال دانشجویان</a></li>
+							<li><a href="#">فارغ التحصیلان</a></li>
+							<li><a href="#">حساب کاربران اینترنت</a></li>
+							<li><a href="#">مرکز دانلود</a></li>
+							<li><a href="#">راهنما</a></li>
+						</ul>
+					</li>
+					<li  style="direction:rtl"><a href="#">صفحه اصلی</a>
+						<ul>
+							<li><a href="#">پورتال دانشجویی</a></li>
+							<li><a href="#">پورتال اساتید</a></li>
+							<li><a href="#">نگارش فنی</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-
-	<div class="container-menu">
-		<div class="menu" style="background:url(images/bg-menu.png);">
-			<div class="lft">
-				<div class="srch">
-					<form action="#" method="get">
-						<input id="btn" type="button" name="btn"  value=""  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
-						<input id="srch" type="text" name="button"  value="جستجو" size="20"  onBlur="clear_fld(this)" onFocus="clear_fld(this)"/>
-					</form>
-				</div>
+</div>
+<div class="container-banner">
+	<div class="banner">
+		<div class="lft">
+			<div class="slideshow">
+				<ol>
+					<li class="slide"><img  src="images/0.png" width="715" height="280" border="0" alt="" id="sld"/></li>
+				</ol>
 			</div>
-			<div class="rgt">
-				<div class="mnu">
-					<ul>
-						<li><a href="#">امکانات</a>
-							<ul>
-								<li><a href="#">غذا خوری</a></li>
-								<li><a href="#">بوفه</a></li>
-								<li><a href="#">خوابگاه</a></li>
-								<li><a href="#">اینترنت</a></li>
-								<li><a href="#">تربیت بدنی</a></li>
-								<li><a href="#">کتابخانه</a></li>
-							</ul>
-						</li>
-						<li><a href="#">پژوهش</a>
-							<ul>
-								<li><a href="#">معاون پژوهشی</a></li>
-								<li><a href="#">مرکز تحقیقات سجاد</a></li>
-								<li><a href="#">مرکز انفورماتیک</a></li>
-								<li><a href="#">انتشارات</a></li>
-								<li><a href="#">کنفرانس ها</a></li>
-								<li><a href="#">آزمایشگاهها</a></li>
-								<li><a href="#">کارآموزی</a></li>
-								<li><a href="#">کتابخانه</a></li>
-								<li><a href="#">کارگاهها</a></li>
-							</ul>	
-						</li>
-						<li><a href="#">آموزشی</a>
-							<ul>
-								<li><a href="#">معاون آموزشی</a></li>
-								<li><a href="#">اداره آموزش</a></li>
-								<li><a href="#">قوانین</a></li>
-								<li><a href="#">تقویم آموزشی</a></li>
-								<li><a href="#">گروهها</a></li>
-							</ul>
-						</li>
-						<li><a href="#">اساتید</a>
-							<ul>
-								<li><a href="#">مهندسی کامپیوتر</a></li>
-								<li><a href="#">مهندسی صنایع</a></li>
-								<li><a href="#">مهندسی عمران</a></li>
-								<li><a href="#">مهندسی برق</a></li>
-							</ul>
-						</li>
-						<li><a href="#">خدمات</a>
-							<ul>
-								<li><a href="#">پست الکترونیک</a></li>
-								<li><a href="#">تغذیه</a></li>
-								<li><a href="#">پورتال اساتید</a></li>
-								<li><a href="#">پورتال دانشجویان</a></li>
-								<li><a href="#">فارغ التحصیلان</a></li>
-								<li><a href="#">حساب کاربران اینترنت</a></li>
-								<li><a href="#">مرکز دانلود</a></li>
-								<li><a href="#">راهنما</a></li>
-							</ul>
-						</li>
-						<li  style="direction:rtl"><a href="#">صفحه اصلی</a>
-							<ul>
-								<li><a href="#">پورتال دانشجویی</a></li>
-								<li><a href="#">پورتال اساتید</a></li>
-								<li><a href="#">نگارش فنی</a></li>
-							</ul>
-						</li>
-					</ul>
+			<div class="navigation"></div>
+		</div>
+		<div class="rgt">
+			<marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="1" scrollamount="1">
+				<div class="news">
+					<p>
+						برآمد باد صبح و بوي نوروز 
+						به كام دوستان و بخت پيروز
+						مبارك بادت اين سال وهمه سال 
+						همايون بادت اين روزوهمه روز
+						بهار خرّمت اي گل كجائي 
+						كه بيني بلبلان را ناله و سوز
+						جهان بي ما بسي بودست وباشد 
+						برادرجزنكونامي ميندوز(سعدي) 
+					</p>
+					<h4>افتتاح دفتر نوآوری موسسه </h4>
+					<p>
+						مرکز نوآوری پارک علم و فناوری خراسان از کلیه دانشجویان علاقه مند که دارای طرح های نوآوری در زمینه های مختلف علوم مهندسی می باشند،جهت نمونه سازی و عملیاتی شدن طرح های حمایت می کند. دانشجویان برای کسب اطلاعات بیشتر می‎توانند به خانم مهندس سجادی (ساختمان شماره 3 اتاق 306) مراجعه نمایند. 
+					</p>
+					<h4>انتخاب مهندس نمونه کشور </h4>
+					<p>
+						جناب آقای دکتر شیبانی استاد گروه مهندسی برق
+						عضو هیات امنای موسسه از سوی فرهنگستان علوم جمهوری اسلامی به عنوان مهندس نمونه کشور در سال 1390 انتخاب شدند مراسم تقدیر از ایشان در روز پنجشنبه 4/12/90 در محل فرهنگستان علوم با حضور رئيس و اعضای فرهنگستان بر گزار شد. 
+					</p>
+				</div>
+			</marquee>
+		
+		</div>
+	</div>
+</div>
+<div class="container-main">
+	<div class="main">
+		<div class="lft">
+			<div class="abut"></div>
+		</div>
+		<div class="rgt" style="padding-top:1px;">
+			<div class="boss">
+				<div class="pic">
+					<img src="images/Dr.jpg" width="140" height="94" />
+				</div>
+				<div class="txt">
+					<h4>
+						خیرمقدم 
+					</h4>
+					<p>
+					«سلام و درود برشما که به این سایت مراجعه فرمودید. مدیریت موسسه آموزش عالی سجاد با اهداف پژوهش و آموزش بنیان شده است و آماده دریافت نظرات پیشنهادی شما و اعمال اصلاحات در مسیر آینده این موسسه خواهد بود. این موسسه در حال حاضر برنامه میان مدت خود را می گذراند و در این دوره زمانی برقراری ارتباطات ملی و بین المللی در رئوس کارها قرار دارد. از آنجایی که پیشنهاد جنابعالی یقینا بررسی و درصورت عملی بودن، اجرا خواهد شد، خواهشمندم لطف و مرحمت خودرا از دانشجویان، اساتید، کارکنان و مدیرت این موسسه دریغ نفرمایید و مارا در انجام خدمت ارشاد نمائید.»
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container-banner">
-		<div class="banner">
-			<div class="lft">
-				<div class="slideshow">
-					<ol>
-						<li class="slide"><img  src="images/0.png" width="715" height="280" border="0" alt="" id="sld"/></li>
-					</ol>
-				</div>
-				<div class="navigation"></div>
+</div>
+<div class="container-fmenu">
+	<div class="fmenu" style="outline:10px solid green;padding-top:1px;">
+		<div class="logo"></div>
+		<div class="sfmenu">
+			<div class="lft"></div>
+			<div class="rgt"></div>
+			<div class="cnr"></div>
+		</div>
+	</div>
+</div>
+<div class="container-footer">
+	<div class="footer">
+		<div class="rgt"></div>
+	</div>
+</div>
 <script type="text/javascript">
 var sld = document.getElementById("sld");
 var aryImg=["images/1.png","images/2.png","images/3.png",
@@ -130,41 +218,6 @@ var Intervl = setInterval(change_img,3000);
 sld.onclick = function (){
 	clearInterval(Intervl);	
 }
-</script>				
-			</div>
-			<div class="rgt"></div>		
-		</div>
-	</div>
-
-	<div class="container-main">
-		<div class="main">
-			<div class="lft">
-				<div class="abut"></div>
-			</div>
-			<div class="rgt" style="padding-top:1px;">
-				<div class="boss">
-					<div class="pic"></div>
-					<div class="txt"></div>
-				</div>
-			</div>				
-		</div>
-	</div>
-
-	<div class="container-fmenu">
-		<div class="fmenu" style="outline:10px solid green;padding-top:1px;">
-			<div class="logo"></div>
-			<div class="sfmenu">
-				<div class="lft"></div>
-				<div class="rgt"></div>
-				<div class="cnr"></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-footer">
-		<div class="footer">
-			<div class="rgt"></div>
-		</div>
-	</div>
+</script>
 </body>
 </html>
