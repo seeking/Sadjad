@@ -1,7 +1,8 @@
 /* Public */
 	*{
 			padding:0;
-			margin:0;	
+			margin:0;
+			-webkit-transition:all 1s;
 	}
 	body{
 		/*background:url(images/bg.jpg) no-repeat top center;*/
@@ -222,6 +223,30 @@
 		cursor:pointer;
 		margin-top:3px;
 	}
+/*banner*/
+div.lft div.slideshow{
+	width:715px;
+	height:280px;
+	float:none;
+}
+div.lft div.navigation{
+	width:715px;
+	height:30px;
+	display:none;
+	float:none;
+}
+
+div.lft:hover div.navigation{
+	display:block;
+	background-color:#093;	
+}
+div.slideshow ol{
+	list-style-type:none;	
+}
+div.slide {
+	position:absolute;
+}
+
 /* Main */
 	div.rgt div.boss{
 	width:200px;
