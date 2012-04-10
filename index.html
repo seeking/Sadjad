@@ -6,29 +6,6 @@
 <link type="text/css" rel="stylesheet" href="style.css"  />
 <script type="text/javascript" src="script.js"></script>
 <style type="text/css">
-body {
-	direction:rtl;	
-}
-div.banner marquee{
-	height:310px;
-	width:inherit;
-}
-
-div.banner div.news{
-	width:250px;
-	margin:0 auto;
-}
-div.banner div.news h4{
-	margin-top:50px;
-	text-shadow:1px 1px 10px black;
-	font-family:Tahoma, Geneva, sans-serif;
-	font-size:10px;
-}
-div.banner div.news p{
-	font-size:14px;
-	text-shadow:1px 1px 10px green;
-}
-
 </style>
 </head>
 <body>
@@ -161,14 +138,28 @@ div.banner div.news p{
 					</p>
 				</div>
 			</marquee>
-		
 		</div>
 	</div>
 </div>
 <div class="container-main">
 	<div class="main">
 		<div class="lft">
-			<div class="abut"></div>
+			<div class="abut">
+				<p>
+					موسسه آموزش عالي سجاد در سال 1375 بعنوان اولين موسسه آموزش عالي غير دولتي در زمينه هاي
+					مهندسي با کسب مجوز از شوراي عالي انقلاب فرهنگي و وزارت علود تحقيقات .و فناوري
+					فعاليت خود را از ابتدا با پذيرش دانشجو در رشته هاي مهندسي برق گرايش الکترونيک 
+					و مهندسي کامپيوتر گرايش نرم افزار در شهر مشهد شروع نمود 
+				</p>
+			</div>
+			<div class="post">
+				<h4>سلام بچه ها</h4>
+				<p>مرسی مو هم خوبم</p>
+			</div>
+			<div class="post">
+				<h4>سلام بچه ها</h4>
+				<p>مرسی مو هم خوبم</p>
+			</div>
 		</div>
 		<div class="rgt" style="padding-top:1px;">
 			<div class="boss">
@@ -191,9 +182,39 @@ div.banner div.news p{
 	<div class="fmenu" style="outline:10px solid green;padding-top:1px;">
 		<div class="logo"></div>
 		<div class="sfmenu">
-			<div class="lft"></div>
-			<div class="rgt"></div>
-			<div class="cnr"></div>
+			<div class="lft">
+				<h4 style="padding-bottom:30px;">تست</h4>
+				<ul>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+				</ul>
+			</div>
+			<div class="rgt">
+				<h4 style="padding-bottom:30px;">تست</h4>
+				<ul>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+				</ul>
+			</div>
+			<div class="cnr">
+				<h4 style="padding-bottom:30px;">تست</h4>
+				<ul>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+					<li><a href="#">تست</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
@@ -202,22 +223,5 @@ div.banner div.news p{
 		<div class="rgt"></div>
 	</div>
 </div>
-<script type="text/javascript">
-var sld = document.getElementById("sld");
-var aryImg=["images/1.png","images/2.png","images/3.png",
-			"images/4.png","images/5.png","images/6.png",
-			"images/7.jpg","images/8.jpg","images/9.jpg"
-			];
-var index_img = 0;
-function change_img(){
-	sld.setAttribute("src",aryImg[index_img]);
-	index_img++;
-	index_img = (index_img >=aryImg.length)?0:index_img;	
-}
-var Intervl = setInterval(change_img,3000);
-sld.onclick = function (){
-	clearInterval(Intervl);	
-}
-</script>
 </body>
 </html>

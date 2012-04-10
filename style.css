@@ -7,6 +7,8 @@
 	body{
 		/*background:url(images/bg.jpg) no-repeat top center;*/
 		height:1993px;
+		direction:rtl;
+
 	}
 	div{
 		outline:1px solid red;	
@@ -224,7 +226,7 @@
 		margin-top:3px;
 	}
 /*banner*/
-div.lft div.slideshow{
+	div.lft div.slideshow{
 	width:715px;
 	height:280px;
 	float:none;
@@ -246,7 +248,25 @@ div.slideshow ol{
 div.slide {
 	position:absolute;
 }
+	div.banner marquee{
+	height:310px;
+	width:inherit;
+}
 
+div.banner div.news{
+	width:250px;
+	margin:0 auto;
+}
+div.banner div.news h4{
+	margin-top:50px;
+	text-shadow:1px 1px 10px black;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:10px;
+}
+div.banner div.news p{
+	font-size:14px;
+	text-shadow:1px 1px 10px green;
+}
 /* Main */
 	div.rgt div.boss{
 	width:200px;
@@ -268,6 +288,17 @@ div.lft div.abut {
 	width:inherit;
 	margin-top:70px;	
 }
+	div.post {
+		width:inherit;
+		min-height:135px;
+	}
+	div.post h4{
+		
+	}
+	div.post p{
+		text-indent:10px;
+	}
+
 /* fmenu */
 	div.sfmenu div.lft{
 	width:280px;
@@ -281,3 +312,24 @@ div.sfmenu div.cnr{
 	width:280px;
 	min-height:inherit;
 }
+	div.sfmenu ul{
+		list-style-type:none;	
+	}
+	div.sfmenu a{
+		text-decoration:none;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:14px;
+		color:gray;	
+	}
+	
+	div.sfmenu a:hover{
+		background-color:#fff;
+		color:black;
+		border-radius:4px;
+			
+	}
+	div.sfmenu h4{
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:14px;
+		color:black;	
+	}
