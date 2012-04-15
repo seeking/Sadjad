@@ -15,6 +15,7 @@ window.onload = function(){
 		clearInterval(Intervl);	
 	}	
 }
+
 function clear_fld(field){
 	if(field.value==field.defaultValue)
 		field.value = "";
